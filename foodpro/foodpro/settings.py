@@ -1,16 +1,13 @@
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'gw%bwzq@%a=x1^u5qx6*%sd%6_&rf-388pnm(lcj_n8p^npcg@'
+# когда буду использовать докер, уберу ключ в .env
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -45,7 +42,8 @@ ROOT_URLCONF = 'foodpro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR, 'users/templates/', 'templates/includes'],
+        'DIRS': [TEMPLATES_DIR, 'users/templates/users', 'templates/includes',
+                 'templates/about', 'templates/appy'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -68,6 +66,7 @@ WSGI_APPLICATION = 'foodpro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+        # Я хотел бы изменить бд, когда буду использовать докер
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
@@ -122,3 +121,5 @@ LOGOUT_REDIRECT_URL = "index"
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
 
+
+RECIPES_PER_PAGE = 6

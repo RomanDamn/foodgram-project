@@ -7,6 +7,6 @@ def shop_list_count(request):
             user=request.user
         ).count()
     else:
-        list_count = None
+        list_count = 0
 
     return {'list_count': list_count}

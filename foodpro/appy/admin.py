@@ -1,10 +1,9 @@
 from django.contrib import admin
-from django.contrib.auth import get_user_model
-from django.contrib.auth.admin import UserAdmin
+from .models import Favorite, Ingredient, Recipe, Number
 
-from .models import Favorite, Ingredient, Recipe
 
-User = get_user_model()
+class IngredientInline(admin.TabularInline):
+    model = Number
 
 
 class RecipeAdmin(admin.ModelAdmin):
@@ -12,9 +11,15 @@ class RecipeAdmin(admin.ModelAdmin):
     search_fields = ("author",)
     list_filter = ("author", "name", "tags", 'ingredient')
 
+    inlines = [
+        IngredientInline,
+    ]
+
     def recipe_favorites(self, obj):
         result = Favorite.objects.filter(recipe=obj).count()
         return result
+
+    recipe_favorites.short_description = "Favorites"
 
 
 class IngredientAdmin(admin.ModelAdmin):
@@ -22,11 +27,5 @@ class IngredientAdmin(admin.ModelAdmin):
     list_filter = ("name",)
 
 
-class MyUserAdmin(UserAdmin):
-    list_filter = ('email', 'first_name',)
-
-
 admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(Ingredient, IngredientAdmin)
-admin.site.unregister(User)
-admin.site.register(User, MyUserAdmin)

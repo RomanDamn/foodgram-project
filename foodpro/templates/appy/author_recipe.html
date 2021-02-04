@@ -16,7 +16,7 @@
             {% include 'top_tags.html' %}
 
         </div>
-
+        {% if request.user.id != author.id %}
         {% if not in_follow %}
         <div class="author-subscribe" data-author="{{author.id}}">
             <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Подписаться на автора</button></p>
@@ -25,6 +25,7 @@
         <div class="author-subscribe" data-author="{{author.id}}">
             <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Отписаться от автора</button></p>
         </div>
+        {% endif %}
         {% endif %}
         <div class="card-list">
             {% for recipey in page %}

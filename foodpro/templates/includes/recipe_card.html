@@ -24,9 +24,9 @@
                     {% else %}
                     <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
                     {% endif %}
-                    {% if not in_favorite and request.user != recipey.author %}
+                    {% if not in_favorite %}
                         <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite icon-favorite_big"></span></button>
-                    {% elif request.user != recipey.author %}
+                    {% else %}
                     <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite icon-favorite_big icon-favorite_active"></span></button>
                     {% endif %}
                 </div>

@@ -3,7 +3,7 @@ from django import template
 register = template.Library()
 
 
-@register.filter(name='get_tag_url')
+@register.filter()
 def get_tag_url(request, tag):
     new_request = request.GET.copy()
     if tag.name in request.GET.getlist('tag'):
