@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
 User = get_user_model()
@@ -19,7 +20,7 @@ class Ingredient(models.Model):
 
 
 class Tag(models.Model):
-    name = models.SlugField('Название тэга',
+    name = models.SlugField('Слаг',
                             max_length=40, unique=True)
     title = models.CharField('Название тэга на русском',
                              max_length=40, null=True)
@@ -51,7 +52,8 @@ class Recipe(models.Model):
                                         verbose_name='Ингредиенты')
     tags = models.ManyToManyField(Tag, related_name='recipes',
                                   verbose_name='Тэги')
-    time = models.PositiveIntegerField('Время приготовления')
+    time = models.PositiveIntegerField('Время приготовления',
+                                       validators=[MaxValueValidator(9000), MinValueValidator(1)])
     pub_date = models.DateTimeField('Время публикации',
                                     auto_now_add=True)
 
@@ -97,6 +99,9 @@ class Follow(models.Model):
 
     class Meta:
         unique_together = ['user', 'author']
+        constraints = [
+            models.UniqueConstraint(fields=['user', 'author'], name='unique follows')
+        ]
         verbose_name = 'Подписка'
         verbose_name_plural = 'Подписки'
 

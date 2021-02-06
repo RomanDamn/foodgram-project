@@ -1,11 +1,14 @@
 import os
-
+from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
 
-SECRET_KEY = 'gw%bwzq@%a=x1^u5qx6*%sd%6_&rf-388pnm(lcj_n8p^npcg@'
+SECRET_KEY = os.environ.get('SECRET_KEY'),
 # когда буду использовать докер, уберу ключ в .env
 
 DEBUG = True
@@ -44,6 +47,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [TEMPLATES_DIR, 'users/templates/users', 'templates/includes',
                  'templates/about', 'templates/appy'],
+# Я не могу убрать доп пути, так как в первом ревью вы сказали мне хранить шаблоны не в корнях стандартных директорий
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

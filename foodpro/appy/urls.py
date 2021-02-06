@@ -21,14 +21,14 @@ urlpatterns = [
 
 urlpatterns += [
     path('', view.index, name='index'),
-    path('ingredients/', views.ingredients, name='ingredients'),
+    path('ingredients', views.ingredients, name='ingredients'),
     path('subscriptions/', view.subscriptions_index, name='subscriptions'),
     path('favorites/', view.favorites, name='favorites'),
     path('shop-list/', views.shop_list, name='shop_list'),
     path('create/', views.create_recipe, name='create_recipe'),
     path('about-author/', view.about_author, name='about_author'),
     path('about-tech/', view.about_tech, name='tech'),
-    path('<str:username>/', view.author_recipes, name='author_recipes'),
+    path('profile/<str:username>/', view.author_recipes, name='author_recipes'),
     path('<str:username>/<int:id>/', view.recipe_view, name='recipe_view'),
     path('<str:username>/<int:id>/edit/',
          views.edit_recipe, name='edit_recipe'),

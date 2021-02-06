@@ -24,10 +24,12 @@
                     {% else %}
                     <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
                     {% endif %}
+                    {% if 'favorites' in request.path %}
                     {% if not in_favorite %}
                         <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite icon-favorite_big"></span></button>
                     {% else %}
                     <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite icon-favorite_big icon-favorite_active"></span></button>
+                    {% endif %}
                     {% endif %}
                 </div>
                 {% endif %}

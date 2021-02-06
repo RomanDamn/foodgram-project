@@ -1,6 +1,4 @@
 import csv
-import sys
-sys.path.append("..")
 
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
@@ -9,7 +7,7 @@ from django.shortcuts import get_object_or_404, render
 
 from .models import (Favorite, Follow, Number, Recipe, ShopList,
                      Tag, User)
-from foodpro.settings import RECIPES_PER_PAGE
+from django.conf import settings
 
 
 def index(request):
@@ -23,7 +21,7 @@ def index(request):
         tags__name__in=tags
     ).distinct()
 
-    paginator = Paginator(recipe_list, RECIPES_PER_PAGE)
+    paginator = Paginator(recipe_list, settings.RECIPES_PER_PAGE)
     in_shop = ShopList.objects.filter(user__username=request.user)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
@@ -33,6 +31,13 @@ def index(request):
         {'page': page, 'paginator': paginator,
             'in_shop': in_shop, 'tag_list': tag_list}
         )
+
+'''
+Я пытался сделать функцию родитель к индексу, favorites и рецептам автора.
+ НО каждая переменная во вьюхе либо используется в следующей строчке, либо передается в шаблон!
+ Просто перенести часть кода в функцию и вернуть значение не получается. Понимаю что если бы я использовал ооп подход,
+ то копипаста было бы в разы меньше, но при функциональном программировании мне кажется без него не обойтись)
+'''
 
 
 def recipe_view(request, username, id):
@@ -69,7 +74,7 @@ def favorites(request):
     in_favorite = Favorite.objects.filter(
         user=request.user, recipe=favorite_recipes)
     page_number = request.GET.get('page')
-    paginator = Paginator(favorite_recipes, RECIPES_PER_PAGE)
+    paginator = Paginator(favorite_recipes, settings.RECIPES_PER_PAGE)
     page = paginator.get_page(page_number)
 
     return render(
@@ -81,6 +86,7 @@ def favorites(request):
     )
 
 
+@login_required
 def shop_list(request):
     list_shop = Recipe.objects.filter(shop_lists__user=request.user)
     return render(
@@ -108,8 +114,7 @@ def get_purchases(request):
         )
 
         for num in range(len(ingredients)):
-            name = ingredients[num][0]
-            unit = ingredients[num][1]
+            name, unit = ingredients[num]
             amount = numbers[num]
 
             if name in ing:
@@ -139,7 +144,7 @@ def author_recipes(request, username):
     recipes = author.recipes.filter(
         tags__name__in=tags
     ).distinct()
-    paginator = Paginator(recipes, RECIPES_PER_PAGE)
+    paginator = Paginator(recipes, settings.RECIPES_PER_PAGE)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
 
@@ -147,7 +152,7 @@ def author_recipes(request, username):
         request,
         'author_recipe.html',
         {'author': author, 'page': page,
-         'paginator': paginator, 'author': author,
+         'paginator': paginator,
          'tag_list': tag_list, 'in_follow': in_follow}
     )
 
@@ -155,9 +160,9 @@ def author_recipes(request, username):
 
 @login_required
 def subscriptions_index(request):
-    my_following = Follow.objects.filter(user=request.user).all()
+    my_following = Follow.objects.filter(user=request.user)
     authors = User.objects.filter(following__in=my_following).order_by('username')
-    paginator = Paginator(authors, RECIPES_PER_PAGE)
+    paginator = Paginator(authors, settings.RECIPES_PER_PAGE)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
     return render(request, 'my_follow.html', {'paginator': paginator,

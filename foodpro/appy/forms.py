@@ -14,6 +14,7 @@ class RecipeForm(ModelForm):
 
         def clean_ingredient(self):
             data = self.cleaned_data['ingredient']
+            # нельзя создать рецепт без ингредиентов
             if not data:
-                raise forms.ValidationError("You have forgotten about Fred!")
+                raise forms.ValidationError('Вы не добавили ингредиентов')
             return data

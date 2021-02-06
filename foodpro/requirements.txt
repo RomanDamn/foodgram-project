@@ -10,4 +10,5 @@ sorl-thumbnail==12.7.0
 sqlite-fts4==1.0.1
 sqlite-utils==3.3
 sqlparse==0.4.1
+python-dotenv==0.15.0
 
