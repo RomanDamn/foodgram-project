@@ -53,7 +53,7 @@ class Recipe(models.Model):
     tags = models.ManyToManyField(Tag, related_name='recipes',
                                   verbose_name='Тэги')
     time = models.PositiveIntegerField('Время приготовления',
-                                       validators=[MaxValueValidator(9000), MinValueValidator(1)])
+                                       validators=[MinValueValidator(1), ])
     pub_date = models.DateTimeField('Время публикации',
                                     auto_now_add=True)
 
@@ -100,7 +100,14 @@ class Follow(models.Model):
     class Meta:
         unique_together = ['user', 'author']
         constraints = [
-            models.UniqueConstraint(fields=['user', 'author'], name='unique follows')
+            models.UniqueConstraint(
+                fields=('user', 'author'),
+                name='user_author'
+            ),
+            models.CheckConstraint(
+                check=~models.Q(user=models.F('author')),
+                name='forbidden_fol_yourself'
+            )
         ]
         verbose_name = 'Подписка'
         verbose_name_plural = 'Подписки'

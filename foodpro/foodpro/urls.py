@@ -4,6 +4,7 @@ from django.contrib import admin
 
 from django.urls import include, path
 
+handler500 = "appy.api.v1.views.server_error"
 
 urlpatterns = [
     path('admin/', admin.site.urls),

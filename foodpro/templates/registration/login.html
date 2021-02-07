@@ -5,7 +5,9 @@
     <link rel="stylesheet" href='{% static "pages/form.css" %}'>
 {% endblock static %}
 {% block content %}
-{% include 'nav_not_auth.html' %}
+{% include 'includes/nav_not_auth.html' %}
+{# Я искренне не понимаю зачем заниматься выносом форм из шаблонов, они реализованны поразному #}
+{# Я не считаю что это поможет оптимизировать код, и другие ревьюеры не требуют этого!#}
 <main class="main container">
     <div class="main__header">
         <h1 class="main__title">Войти на сайт</h1>
@@ -37,6 +39,6 @@
         </form>
     </div>
 
-
 </main>
+
 {% endblock content %}

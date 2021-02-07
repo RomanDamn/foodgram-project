@@ -7,9 +7,9 @@
 {% block content %}
 {% csrf_token %}
 {% if request.user.is_authenticated %}
-{% include 'nav_auth.html' %}
+{% include 'includes/nav_auth.html' %}
 {% else %}
-{% include 'nav_not_auth.html' %}
+{% include 'includes/nav_not_auth.html' %}
 {% endif %}
     {% load thumbnail %}
     <main class="main container">

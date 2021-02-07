@@ -45,9 +45,7 @@ ROOT_URLCONF = 'foodpro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR, 'users/templates/users', 'templates/includes',
-                 'templates/about', 'templates/appy'],
-# Я не могу убрать доп пути, так как в первом ревью вы сказали мне хранить шаблоны не в корнях стандартных директорий
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

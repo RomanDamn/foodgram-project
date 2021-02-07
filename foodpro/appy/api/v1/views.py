@@ -1,15 +1,15 @@
 import json
 
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 
 from django.views.decorators.http import require_http_methods
 
 from ...forms import RecipeForm
 from ...models import (Favorite, Recipe, ShopList,
-                        Ingredient, Follow, User)
-from ...utils import save_in_edit_create
+                       Ingredient, Follow, User)
+from .utils import save_in_edit_create
 from ...views import shop_list
 
 
@@ -67,6 +67,10 @@ def purchases(request, recipe_id):
     return JsonResponse({'success': status})
 
 
+def server_error(request):
+    return HttpResponse("500 error", status_code=404)
+
+
 @login_required
 def edit_recipe(request, username, id):
     recipe = get_object_or_404(Recipe, author__username=username, id=id)
@@ -76,7 +80,7 @@ def edit_recipe(request, username, id):
         if form.is_valid():
             return save_in_edit_create(request, form)
         valid = 'error'
-        return render(request, 'form_recipe.html', {'form': form,
+        return render(request, 'appy/form_recipe.html', {'form': form,
                                                     'valid': valid,
                                                     'recipe': recipe
                                                     })
@@ -84,41 +88,39 @@ def edit_recipe(request, username, id):
     form = RecipeForm(request.POST,
                       files=request.FILES or None,
                       instance=recipe)
-    return render(request, 'form_recipe.html',
+    return render(request, 'appy/form_recipe.html',
                   {'form': form, 'recipe': recipe})
-
-
-'''Я вынес общий код вьюшек создания и редактирования рецепта в отдельную функцию'''
 
 
 @login_required
 def create_recipe(request):
     if request.method == 'POST':
         ing = [ing for key,
-                       ing in request.POST.items() if key.startswith('nameIngredient_')]
+               ing in request.POST.items()
+               if key.startswith('nameIngredient_')]
 
         form = RecipeForm(request.POST, files=request.FILES or None)
         if len(ing) == 0:
             valid = 'error'
-            return render(request, 'form_recipe.html', {'form': form,
+            return render(request, 'appy/form_recipe.html', {'form': form,
                                                         'valid': valid,
                                                         })
         if form.is_valid():
             return save_in_edit_create(request, form)
         valid = 'error'
-        return render(request, 'form_recipe.html', {'form': form,
+        return render(request, 'appy/form_recipe.html', {'form': form,
                                                     'valid': valid,
                                                     })
 
     form = RecipeForm(request.POST, files=request.FILES or None)
-    return render(request, 'form_recipe.html', {'form': form})
+    return render(request, 'appy/form_recipe.html', {'form': form})
 
 
 @login_required
 def delete_recipe(request, username, id):
     recipe = get_object_or_404(Recipe, pk=id, author__username=username)
     recipe.delete()
-    return redirect("index")
+    return redirect("appy/index")
 
 
 @login_required

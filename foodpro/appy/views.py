@@ -27,17 +27,10 @@ def index(request):
     page = paginator.get_page(page_number)
     return render(
         request,
-        'index.html',
+        'appy/index.html',
         {'page': page, 'paginator': paginator,
             'in_shop': in_shop, 'tag_list': tag_list}
         )
-
-'''
-Я пытался сделать функцию родитель к индексу, favorites и рецептам автора.
- НО каждая переменная во вьюхе либо используется в следующей строчке, либо передается в шаблон!
- Просто перенести часть кода в функцию и вернуть значение не получается. Понимаю что если бы я использовал ооп подход,
- то копипаста было бы в разы меньше, но при функциональном программировании мне кажется без него не обойтись)
-'''
 
 
 def recipe_view(request, username, id):
@@ -51,7 +44,7 @@ def recipe_view(request, username, id):
     ingredients = Number.objects.filter(recipe=recipe)
     return render(
         request,
-        'single_page.html',
+        'appy/single_page.html',
         {'recipe': recipe, 'ingredients': ingredients,
             'in_favorite': in_favorite,
         'in_follow': in_follow, 'in_shop': in_shop}
@@ -79,7 +72,7 @@ def favorites(request):
 
     return render(
         request,
-        'favorite.html', {
+        'appy/favorite.html', {
             'page': page, 'paginator': paginator,
             'tag_list': tag_list, 'in_favorite': in_favorite
         }
@@ -91,7 +84,7 @@ def shop_list(request):
     list_shop = Recipe.objects.filter(shop_lists__user=request.user)
     return render(
         request,
-        'shop_list.html',
+        'appy/shop_list.html',
         {'list_shop': list_shop}
     )
 
@@ -150,7 +143,7 @@ def author_recipes(request, username):
 
     return render(
         request,
-        'author_recipe.html',
+        'appy/author_recipe.html',
         {'author': author, 'page': page,
          'paginator': paginator,
          'tag_list': tag_list, 'in_follow': in_follow}
@@ -165,13 +158,13 @@ def subscriptions_index(request):
     paginator = Paginator(authors, settings.RECIPES_PER_PAGE)
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
-    return render(request, 'my_follow.html', {'paginator': paginator,
+    return render(request, 'appy/my_follow.html', {'paginator': paginator,
                                              'page': page})
 
 
 def about_author(request):
-    return render(request, 'about_author.html')
+    return render(request, 'about/about_author.html')
 
 
 def about_tech(request):
-    return render(request, 'about_tech.html')
+    return render(request, 'about/about_tech.html')

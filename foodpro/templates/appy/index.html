@@ -7,21 +7,21 @@
 {% block content %}
 {% csrf_token %}
 {% if user.is_authenticated %}
-  {% include 'nav_auth.html' with index=1 %}
+  {% include 'includes/nav_auth.html' with index=1 %}
 {% else %}
-{% include 'nav_not_auth.html' with index=True %}
+{% include 'includes/nav_not_auth.html' with index=True %}
 {% endif %}
     <main class="main container">
         <div class="main__header">
             <h1 class="main__title">Рецепты</h1>
-           {% include 'top_tags.html' %}
+           {% include 'includes/top_tags.html' %}
         </div>
          <div class="card-list">
         {% for recipey in page %}
-        {% include 'recipe_card.html' with items=page paginator=paginator %}
+        {% include 'includes/recipe_card.html' with items=page paginator=paginator %}
         {% endfor %}
          </div>
-        {% include 'paginator.html' with items=page paginator=paginator %}
+        {% include 'includes/paginator.html' with items=page paginator=paginator %}
     </main>
 {% endblock content %}
 

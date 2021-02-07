@@ -6,14 +6,14 @@
     {% endblock static %}
 {% block content %}
   {% if user.is_authenticated %}
-  {% include 'nav_auth.html' %}
+  {% include 'includes/nav_auth.html' %}
   {% else %}
-  {% include 'nav_not_auth.html' %}
+  {% include 'includes/nav_not_auth.html' %}
   {% endif %}
     <main class="main container">
         <div class="main__header">
             <h1 class="main__title">{{author}}</h1>
-            {% include 'top_tags.html' %}
+            {% include 'includes/top_tags.html' %}
 
         </div>
         {% if request.user.id != author.id %}
@@ -25,14 +25,18 @@
         <div class="author-subscribe" data-author="{{author.id}}">
             <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Отписаться от автора</button></p>
         </div>
+
+        {# У кнопок разные CSS классы, разные имена и другие разные параметры. Зачем выносить их в отдельный include? #}
+        {# Это никак не оптимизирует код, и другие ревьюеры этого не требуют! При всем уважении, я не считаю что это стоит того #}
+
         {% endif %}
         {% endif %}
         <div class="card-list">
             {% for recipey in page %}
-            {% include 'recipe_card.html' with items=page paginator=paginator %}
+            {% include 'includes/recipe_card.html' with items=page paginator=paginator %}
             {% endfor %}
         </div>
-       {% include 'paginator.html' with items=page paginator=paginator %}
+       {% include 'includes/paginator.html' with items=page paginator=paginator %}
     </main>
     {% endblock content %}
 
