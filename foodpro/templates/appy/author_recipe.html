@@ -19,15 +19,12 @@
         {% if request.user.id != author.id %}
         {% if not in_follow %}
         <div class="author-subscribe" data-author="{{author.id}}">
-            <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Подписаться на автора</button></p>
+            <p style="padding: 0 0 2em 0;">{% include 'includes/buttons/author_recipe_button.html' with button_class="button button_style_light-blue button_size_subscribe" button_name="subscribe" button_text="Подписаться на автора" %}</p>
         </div>
         {% else %}
         <div class="author-subscribe" data-author="{{author.id}}">
-            <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Отписаться от автора</button></p>
+            <p style="padding: 0 0 2em 0;">{% include 'includes/buttons/author_recipe_button.html' with button_class="button button_style_light-blue button_size_subscribe" button_name="subscribe" button_text="Отписаться от автора" %}</p>
         </div>
-
-        {# У кнопок разные CSS классы, разные имена и другие разные параметры. Зачем выносить их в отдельный include? #}
-        {# Это никак не оптимизирует код, и другие ревьюеры этого не требуют! При всем уважении, я не считаю что это стоит того #}
 
         {% endif %}
         {% endif %}

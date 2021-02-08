@@ -83,11 +83,11 @@
             </div>
             {% if 'edit' in request.path %}
             <div class="form__footer">
-                <button class="button button_style_blue">Сохранить</button>  <a style="margin-left: 2.5em" href="{% url 'delete_recipe' recipe.author.username recipe.id %}" class="form__ingredient-link">Удалить</a>
+                {% include 'includes/buttons/form_button.html' with button_class="button button_style_blue" button_text='Сохранить' %} <a style="margin-left: 2.5em" href="{% url 'delete_recipe' recipe.author.username recipe.id %}" class="form__ingredient-link">Удалить</a>
             </div>
             {% else %}
             <div class="form__footer">
-                <button class="button button_style_blue">Создать рецепт</button>
+                {% include 'includes/buttons/form_button.html' with button_class="button button_style_blue" button_text='Создать рецепт' %}
             </div>
             {% endif %}
         </form>

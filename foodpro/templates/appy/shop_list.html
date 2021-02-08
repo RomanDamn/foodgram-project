@@ -26,7 +26,7 @@
             </li>
             {% endfor %}
         </ul>
-        <a href="{% url 'get_purchases' %}"><button class="button button_style_blue">Скачать список</button></a>
+        <a href="{% url 'get_purchases' %}">{% include 'includes/buttons/shop_list_button.html' with button_class="button button_style_blue" button_text="Скачать список" %}</a>
 
 
     </div>
