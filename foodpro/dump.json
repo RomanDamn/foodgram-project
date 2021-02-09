@@ -18306,8 +18306,13 @@
     "pk": 1,
     "fields": {
         "action_time": "2021-01-22T17:13:26.553Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "2",
         "object_repr": "Recipe object (2)",
         "action_flag": 1,
@@ -18319,8 +18324,13 @@
     "pk": 2,
     "fields": {
         "action_time": "2021-01-23T21:46:18.091Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "3",
         "object_repr": "Recipe object (3)",
         "action_flag": 1,
@@ -18332,8 +18342,13 @@
     "pk": 3,
     "fields": {
         "action_time": "2021-01-24T17:19:51.916Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "4",
         "object_repr": "Recipe object (4)",
         "action_flag": 1,
@@ -18345,8 +18360,13 @@
     "pk": 4,
     "fields": {
         "action_time": "2021-01-25T14:33:08.358Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "5",
         "object_repr": "Recipe object (5)",
         "action_flag": 1,
@@ -18358,8 +18378,13 @@
     "pk": 5,
     "fields": {
         "action_time": "2021-01-25T14:33:22.549Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "6",
         "object_repr": "Recipe object (6)",
         "action_flag": 1,
@@ -18371,8 +18396,13 @@
     "pk": 6,
     "fields": {
         "action_time": "2021-01-25T14:33:39.432Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "7",
         "object_repr": "Recipe object (7)",
         "action_flag": 1,
@@ -18384,8 +18414,13 @@
     "pk": 7,
     "fields": {
         "action_time": "2021-01-25T15:21:09.079Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "8",
         "object_repr": "Recipe object (8)",
         "action_flag": 1,
@@ -18397,8 +18432,13 @@
     "pk": 8,
     "fields": {
         "action_time": "2021-01-28T20:48:56.725Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "27",
         "object_repr": "\u0420\u043e\u043c\u0430\u043d",
         "action_flag": 3,
@@ -18410,8 +18450,13 @@
     "pk": 9,
     "fields": {
         "action_time": "2021-01-28T20:49:14.094Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "26",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18423,8 +18468,13 @@
     "pk": 10,
     "fields": {
         "action_time": "2021-01-28T20:49:14.251Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "25",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18436,8 +18486,13 @@
     "pk": 11,
     "fields": {
         "action_time": "2021-01-28T20:49:14.334Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "24",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18449,8 +18504,13 @@
     "pk": 12,
     "fields": {
         "action_time": "2021-01-28T20:49:14.419Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "23",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18462,8 +18522,13 @@
     "pk": 13,
     "fields": {
         "action_time": "2021-01-28T20:49:15.045Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "22",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18475,8 +18540,13 @@
     "pk": 14,
     "fields": {
         "action_time": "2021-01-28T20:49:15.254Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "21",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18488,8 +18558,13 @@
     "pk": 15,
     "fields": {
         "action_time": "2021-01-28T20:49:15.347Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "20",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18501,8 +18576,13 @@
     "pk": 16,
     "fields": {
         "action_time": "2021-01-28T20:49:15.443Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "19",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18514,8 +18594,13 @@
     "pk": 17,
     "fields": {
         "action_time": "2021-01-28T20:49:15.550Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "18",
         "object_repr": "Roman_cloud",
         "action_flag": 3,
@@ -18527,8 +18612,13 @@
     "pk": 18,
     "fields": {
         "action_time": "2021-01-29T19:12:25.593Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "31",
         "object_repr": "lol",
         "action_flag": 3,
@@ -18540,8 +18630,13 @@
     "pk": 19,
     "fields": {
         "action_time": "2021-01-29T19:16:07.181Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "32",
         "object_repr": "lol",
         "action_flag": 3,
@@ -18553,8 +18648,13 @@
     "pk": 20,
     "fields": {
         "action_time": "2021-01-31T14:15:30.938Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "36",
         "object_repr": "\u0420\u043e\u043c\u0430\u0440\u0438\u043e",
         "action_flag": 3,
@@ -18566,8 +18666,13 @@
     "pk": 21,
     "fields": {
         "action_time": "2021-01-31T20:32:03.610Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "40",
         "object_repr": "AUE bro",
         "action_flag": 3,
@@ -18579,8 +18684,13 @@
     "pk": 22,
     "fields": {
         "action_time": "2021-01-31T20:32:11.725Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "39",
         "object_repr": "\u041a\u0435\u043a \u043b\u043e\u043b\u043a\u0430",
         "action_flag": 3,
@@ -18592,8 +18702,13 @@
     "pk": 23,
     "fields": {
         "action_time": "2021-02-01T00:30:05.286Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "42",
         "object_repr": "flu high",
         "action_flag": 2,
@@ -18605,8 +18720,13 @@
     "pk": 24,
     "fields": {
         "action_time": "2021-02-01T14:42:42.319Z",
-        "user": 1,
-        "content_type": 9,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
         "object_id": "2",
         "object_repr": "daero3333",
         "action_flag": 2,
@@ -18618,8 +18738,13 @@
     "pk": 25,
     "fields": {
         "action_time": "2021-02-03T14:41:05.023Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "44",
         "object_repr": "\u0411\u0443\u0445\u043b\u0438\u0448\u043a\u043e",
         "action_flag": 1,
@@ -18631,8 +18756,13 @@
     "pk": 26,
     "fields": {
         "action_time": "2021-02-03T14:46:54.835Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "44",
         "object_repr": "\u0411\u0443\u0445\u043b\u0438\u0448\u043a\u043e",
         "action_flag": 3,
@@ -18644,8 +18774,13 @@
     "pk": 27,
     "fields": {
         "action_time": "2021-02-05T18:44:10.841Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "66",
         "object_repr": "\u0449\u0448\u043e\u0433\u0440\u043f\u0430\u0432\u044b",
         "action_flag": 3,
@@ -18657,8 +18792,13 @@
     "pk": 28,
     "fields": {
         "action_time": "2021-02-05T18:44:43.105Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "67",
         "object_repr": "/.,mnbvc",
         "action_flag": 1,
@@ -18670,8 +18810,13 @@
     "pk": 29,
     "fields": {
         "action_time": "2021-02-05T18:45:02.218Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "67",
         "object_repr": "/.,mnbvc",
         "action_flag": 3,
@@ -18683,8 +18828,13 @@
     "pk": 30,
     "fields": {
         "action_time": "2021-02-05T18:45:02.432Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "63",
         "object_repr": "nhb",
         "action_flag": 3,
@@ -18696,8 +18846,13 @@
     "pk": 31,
     "fields": {
         "action_time": "2021-02-05T18:45:02.517Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "62",
         "object_repr": "uygfdxz",
         "action_flag": 3,
@@ -18709,8 +18864,13 @@
     "pk": 32,
     "fields": {
         "action_time": "2021-02-05T18:45:02.601Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "61",
         "object_repr": "lkjhbgvcx",
         "action_flag": 3,
@@ -18722,8 +18882,13 @@
     "pk": 33,
     "fields": {
         "action_time": "2021-02-05T18:45:02.720Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "60",
         "object_repr": ",lkjhgvfcxz",
         "action_flag": 3,
@@ -18735,8 +18900,13 @@
     "pk": 34,
     "fields": {
         "action_time": "2021-02-05T18:45:02.889Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "59",
         "object_repr": "/.,mnbv",
         "action_flag": 3,
@@ -18748,8 +18918,13 @@
     "pk": 35,
     "fields": {
         "action_time": "2021-02-05T18:45:02.988Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "58",
         "object_repr": "\u0431\u044c\u043b\u043e\u0440\u0438\u043c\u0441",
         "action_flag": 3,
@@ -18761,8 +18936,13 @@
     "pk": 36,
     "fields": {
         "action_time": "2021-02-05T18:45:03.160Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "57",
         "object_repr": "\u0431\u044c\u043b\u043e\u0440\u0438\u043c\u0441",
         "action_flag": 3,
@@ -18774,8 +18954,13 @@
     "pk": 37,
     "fields": {
         "action_time": "2021-02-06T13:48:37.530Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "79",
         "object_repr": "hgvfcxz!!!!!!!!!!!!!!!",
         "action_flag": 1,
@@ -18787,8 +18972,13 @@
     "pk": 38,
     "fields": {
         "action_time": "2021-02-06T13:54:49.968Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "79",
         "object_repr": "hgvfcxz!!!!!!!!!!!!!!!",
         "action_flag": 3,
@@ -18800,8 +18990,13 @@
     "pk": 39,
     "fields": {
         "action_time": "2021-02-06T13:55:15.786Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "80",
         "object_repr": ",.mnbvc",
         "action_flag": 1,
@@ -18813,8 +19008,13 @@
     "pk": 40,
     "fields": {
         "action_time": "2021-02-06T13:55:27.290Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "80",
         "object_repr": ",.mnbvc",
         "action_flag": 3,
@@ -18826,8 +19026,13 @@
     "pk": 41,
     "fields": {
         "action_time": "2021-02-09T13:20:31.059Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "82",
         "object_repr": "\u043e\u0442\u0440\u0438\u043f\u043c\u0430\u0441",
         "action_flag": 3,
@@ -18839,8 +19044,13 @@
     "pk": 42,
     "fields": {
         "action_time": "2021-02-09T13:20:31.924Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "81",
         "object_repr": "\u043e\u0442\u0440\u0438\u043f\u043c\u0430\u0441",
         "action_flag": 3,
@@ -18852,8 +19062,13 @@
     "pk": 43,
     "fields": {
         "action_time": "2021-02-09T13:20:32.318Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "78",
         "object_repr": "\u043b\u0443\u043a",
         "action_flag": 3,
@@ -18865,8 +19080,13 @@
     "pk": 44,
     "fields": {
         "action_time": "2021-02-09T13:20:33.074Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "73",
         "object_repr": ";lkjhgfds",
         "action_flag": 3,
@@ -18878,8 +19098,13 @@
     "pk": 45,
     "fields": {
         "action_time": "2021-02-09T13:20:33.801Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "63",
         "object_repr": "\u0442\u0440\u043e\u043b\u043e\u043b\u043e",
         "action_flag": 3,
@@ -18891,8 +19116,13 @@
     "pk": 46,
     "fields": {
         "action_time": "2021-02-09T13:20:34.551Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "62",
         "object_repr": "';lkjhbgvc",
         "action_flag": 3,
@@ -18904,8 +19134,13 @@
     "pk": 47,
     "fields": {
         "action_time": "2021-02-09T13:20:34.713Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "58",
         "object_repr": "flu highh",
         "action_flag": 3,
@@ -18917,8 +19152,13 @@
     "pk": 48,
     "fields": {
         "action_time": "2021-02-09T13:20:34.832Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "57",
         "object_repr": "flu high",
         "action_flag": 3,
@@ -18930,8 +19170,13 @@
     "pk": 49,
     "fields": {
         "action_time": "2021-02-09T13:20:34.939Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "56",
         "object_repr": "\u0411\u043e\u0440\u0449",
         "action_flag": 3,
@@ -18943,8 +19188,13 @@
     "pk": 50,
     "fields": {
         "action_time": "2021-02-09T13:20:35.314Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "55",
         "object_repr": "\u0411\u043e\u0440\u0449",
         "action_flag": 3,
@@ -18956,8 +19206,13 @@
     "pk": 51,
     "fields": {
         "action_time": "2021-02-09T13:20:35.781Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "51",
         "object_repr": "';lkjhgf",
         "action_flag": 3,
@@ -18969,8 +19224,13 @@
     "pk": 52,
     "fields": {
         "action_time": "2021-02-09T13:20:35.961Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "42",
         "object_repr": "flu high",
         "action_flag": 3,
@@ -18982,8 +19242,13 @@
     "pk": 53,
     "fields": {
         "action_time": "2021-02-09T13:20:36.335Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "41",
         "object_repr": "\u0438\u043d\u043e\u043a\u043e\u043c\u044b\u0441\u043b\u0438\u0435",
         "action_flag": 3,
@@ -18995,8 +19260,13 @@
     "pk": 54,
     "fields": {
         "action_time": "2021-02-09T13:20:36.703Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "38",
         "object_repr": "testing me",
         "action_flag": 3,
@@ -19008,8 +19278,13 @@
     "pk": 55,
     "fields": {
         "action_time": "2021-02-09T13:20:37.359Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "37",
         "object_repr": "Test",
         "action_flag": 3,
@@ -19021,8 +19296,13 @@
     "pk": 56,
     "fields": {
         "action_time": "2021-02-09T13:20:37.510Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "35",
         "object_repr": "fr4ecd",
         "action_flag": 3,
@@ -19034,8 +19314,13 @@
     "pk": 57,
     "fields": {
         "action_time": "2021-02-09T13:20:37.874Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "33",
         "object_repr": "lol",
         "action_flag": 3,
@@ -19047,8 +19332,13 @@
     "pk": 58,
     "fields": {
         "action_time": "2021-02-09T13:20:38.181Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "28",
         "object_repr": "RomaDamn",
         "action_flag": 3,
@@ -19060,8 +19350,13 @@
     "pk": 59,
     "fields": {
         "action_time": "2021-02-09T13:20:38.551Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "8",
         "object_repr": "vfdcfz",
         "action_flag": 3,
@@ -19073,8 +19368,13 @@
     "pk": 60,
     "fields": {
         "action_time": "2021-02-09T13:20:38.897Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "7",
         "object_repr": "afecbv",
         "action_flag": 3,
@@ -19086,8 +19386,13 @@
     "pk": 61,
     "fields": {
         "action_time": "2021-02-09T13:20:39.387Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "6",
         "object_repr": "faer",
         "action_flag": 3,
@@ -19099,8 +19404,13 @@
     "pk": 62,
     "fields": {
         "action_time": "2021-02-09T13:20:40.159Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "5",
         "object_repr": "fvr",
         "action_flag": 3,
@@ -19112,8 +19422,13 @@
     "pk": 63,
     "fields": {
         "action_time": "2021-02-09T13:20:40.500Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "4",
         "object_repr": "\u0411\u043b\u0430 \u0431\u043b\u0430",
         "action_flag": 3,
@@ -19125,8 +19440,13 @@
     "pk": 64,
     "fields": {
         "action_time": "2021-02-09T13:20:40.718Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "3",
         "object_repr": "fsgdvs",
         "action_flag": 3,
@@ -19138,8 +19458,13 @@
     "pk": 65,
     "fields": {
         "action_time": "2021-02-09T13:20:41.029Z",
-        "user": 1,
-        "content_type": 5,
+        "user": [
+            "root"
+        ],
+        "content_type": [
+            "appy",
+            "recipe"
+        ],
         "object_id": "1",
         "object_repr": "\u0440\u0438\u0441 \u0441 \u0441\u043e\u0443\u0441\u043e\u043c",
         "action_flag": 3,
@@ -19150,15 +19475,21 @@
     "model": "appy.follow",
     "pk": 34,
     "fields": {
-        "user": 1,
-        "author": 3
+        "user": [
+            "root"
+        ],
+        "author": [
+            "vasilek"
+        ]
     }
 },
 {
     "model": "appy.recipe",
     "pk": 83,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "\u041d\u0435\u0433\u0440\u043e\u043d\u0438",
         "image": "appy/fa40d06d-8e6d-4114-8639-94a2d082f866.jpg",
         "description": "\u041f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u0438\u0442\u044c \u0441\u0442\u0438\u0440\u043e\u043c \u0432 \u0441\u043c\u0435\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u043c \u0441\u0442\u0430\u043a\u0430\u043d\u0435",
@@ -19175,7 +19506,9 @@
     "model": "appy.recipe",
     "pk": 84,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "\u0414\u0440\u0430\u0439 \u043c\u0430\u0440\u0442\u0438\u043d\u0438",
         "image": "appy/unnamed.jpg",
         "description": "\u0421\u0442\u0440\u0438\u0430\u043d\u0443\u0442\u044c \u0432 \u0441\u043c\u0435\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u043c \u0441\u0442\u0430\u043a\u0430\u043d\u0435, \u043f\u0435\u0440\u0435\u043b\u0438\u0442\u044c \u0432 \u043a\u043e\u043a\u0442\u0435\u0439\u043b\u044c\u043d\u0443\u044e \u0440\u044e\u043c\u043a\u0443",
@@ -19192,7 +19525,9 @@
     "model": "appy.recipe",
     "pk": 85,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "\u0434\u0430\u0439\u043a\u0438\u0440\u0438",
         "image": "appy/Daiquiri-square.jpg",
         "description": "\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439 \u0448\u0435\u0439\u043a, \u043f\u0435\u0440\u0435\u043b\u0438\u0442\u044c \u0432 \u043a\u043e\u043a\u0442\u0435\u0439\u043b\u044c\u043d\u0443\u044e \u0440\u044e\u043c\u043a\u0443",
@@ -19209,7 +19544,9 @@
     "model": "appy.recipe",
     "pk": 86,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "Acmella Express",
         "image": "appy/mP5YqkhuPuI.jpg",
         "description": "\u041f\u0440\u0438\u0434\u0443\u043c\u0430\u043d\u043d\u044b\u0439 \u043c\u043d\u043e\u044e \u043a\u043e\u043a\u0442\u0435\u0439\u043b\u044c Acmella Express. \u0421\u043e\u0441\u0442\u043e\u0438\u0442 \u0438\u0437 2-\u0443\u0445 \u043f\u0440\u044f\u043d\u044b\u0445 \u0440\u043e\u043c\u043e\u0432, \u043d\u0430\u0441\u0442\u043e\u044f\u043d\u043d\u044b\u0445 \u043d\u0430 \u0410\u043a\u043c\u0435\u043b\u043b\u0435( \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u043c \u0446\u0432\u0435\u0442\u043a\u0435 ), \u043b\u0438\u043c\u043e\u043d\u043d\u043e\u043c \u0441\u043e\u043a\u0435, \u0441\u0438\u0440\u043e\u043f\u0435, \u043d\u0430\u0441\u0442\u043e\u044f\u043d\u043d\u043e\u043c \u043d\u0430 \u043f\u0430\u043b\u043e\u0447\u043a\u0435 \u0432\u0430\u043d\u0438\u043b\u0438 \u0438 \u043e\u0442\u0432\u0430\u0440\u0435 \u0438\u0437 \u043a\u0443\u0440\u0430\u0433\u0438. \u0423\u043a\u0440\u0430\u0448\u0435\u043d \u043a\u0438\u0441\u043b\u0438\u0446\u043e\u0439 \u0431\u0430\u0442\u0435\u0440\u0444\u043b\u044f\u0439. \u0414\u0435\u043b\u0430\u0435\u0442\u0441\u044f \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0448\u0435\u0439\u043a\u0430",
@@ -19224,7 +19561,9 @@
     "model": "appy.recipe",
     "pk": 87,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "Cite Soleil",
         "image": "appy/ZaWjinmUh8g.jpg",
         "description": "\u0421\u043e\u0441\u0442\u0430\u0432:\r\n-\u0432\u044b\u0434\u0435\u0440\u0436\u0430\u043d\u043d\u0430\u044f \u0442\u0435\u043a\u0438\u043b\u0430 Don Julio reposado\r\n-\u043a\u043e\u0440\u0434\u0438\u0430\u043b \u0438\u0437 \u0446\u0435\u0434\u0440\u044b \u043b\u0430\u0439\u043c\u0430 \u0438 \u0440\u043e\u0437\u043c\u0430\u0440\u0438\u043d\u0430\r\n-\u0441\u043e\u043a \u0438\u0437 \u043e\u0431\u0436\u0430\u0440\u0435\u043d\u044b\u0445 \u043b\u0438\u043c\u043e\u043d\u043e\u0432\r\n-\u0448\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u044b\u0439 \u0431\u0438\u0442\u0442\u0435\u0440\r\n- \u043f\u0435\u043d\u0430 \u0438\u0437 \u0441\u044b\u0440\u0430 \u0431\u043b\u044e \u0434\u0435 \u0442\u0435\u0440\u043c\u0438\u043d\u044c\u043e\u043d \u0438 \u0439\u043e\u0433\u0443\u0440\u0442\u0430 \u0441 \u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432\u043e\u043c\r\n-\u0437\u0430\u043a\u0443\u0441\u043a\u0430 \u0438\u0437 \u0444\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0445 \u0441\u044b\u0440\u043e\u0432\r\n\u0414\u0435\u043b\u0430\u0435\u0442\u0441\u044f \u0448\u0435\u0439\u043a\u043e\u043c",
@@ -19239,7 +19578,9 @@
     "model": "appy.recipe",
     "pk": 88,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "\u043e\u043b\u0434 \u0444\u044d\u0448\u043d",
         "image": "appy/old-fashioned-true.jpg",
         "description": "\u041d\u0430\u043b\u0438\u0442\u044c \u0432 \u0431\u043e\u043a\u0430\u043b 20 \u043c\u043b \u0431\u0443\u0440\u0431\u043e\u043d\u0430 ,\u043a\u0438\u043d\u0443\u0442\u044c \u043a\u0443\u0441\u043e\u0447\u0435\u043a \u0441\u0430\u0445\u0430\u0440\u0430 \u0438 \u043a\u0430\u043f\u043d\u0443\u0442\u044c \u0431\u0438\u0442\u0442\u0435\u0440\u0430. \u0420\u0430\u0441\u0442\u043e\u043b\u043e\u0447\u044c \u0441\u0430\u0445\u0430\u0440 \u0438 \u0441\u0442\u0438\u0440\u0430\u043d\u0443\u0442\u044c \u0431\u0435\u0437 \u043b\u044c\u0434\u0430. \u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043b\u0435\u0434 ,\u0434\u043e\u043b\u0438\u0442\u044c \u0431\u0443\u0440\u0431\u043e\u043d \u0438 \u0441\u0442\u0438\u0440\u0430\u043d\u0443\u0442\u044c \u0435\u0449\u0435 \u0440\u0430\u0437.",
@@ -19254,7 +19595,9 @@
     "model": "appy.recipe",
     "pk": 89,
     "fields": {
-        "author": 1,
+        "author": [
+            "root"
+        ],
         "name": "\u041c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430",
         "image": "appy/margarita_saluskazan.jpg",
         "description": "\u0428\u0435\u0439\u043a, \u0444\u0430\u0439\u043d \u0441\u0442\u0440\u0435\u0438\u043d)",
