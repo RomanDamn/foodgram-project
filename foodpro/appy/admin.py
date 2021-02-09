@@ -23,7 +23,7 @@ class RecipeAdmin(admin.ModelAdmin):
         return result
 
     recipe_favorites.short_description = 'Favorites'
-# Я пытался вызывать метод recipe_favorites до его объявления, но возникает ошибка!
+
 
 class IngredientAdmin(admin.ModelAdmin):
     list_display = ('name', 'unit')
