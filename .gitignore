@@ -1,5 +1,4 @@
 .git/*
-foodpro/.env
 venv/
 .venv
 .venv/
