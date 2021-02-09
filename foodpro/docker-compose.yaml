@@ -13,7 +13,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: daero3333/gates:v1.0
+    image: daero3333/foodpro:v1.0
     volumes:
       - staticfiles:/code/static
     depends_on:
