@@ -15,3 +15,5 @@ sqlparse==0.4.1
 tabulate==0.8.7
 yaml-to-sqlite==0.3.1
 gunicorn==20.0.4
+pytest==5.4.1
+pytest-django==3.9.0
