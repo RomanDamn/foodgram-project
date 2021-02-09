@@ -16,6 +16,7 @@ services:
     image: daero3333/foodpro:latest
     volumes:
       - staticfiles:/code/static
+      - mediafiles:/code/media
     depends_on:
       - db
     env_file:
