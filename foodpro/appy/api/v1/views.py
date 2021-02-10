@@ -120,7 +120,7 @@ def create_recipe(request):
 def delete_recipe(request, username, id):
     recipe = get_object_or_404(Recipe, pk=id, author__username=username)
     recipe.delete()
-    return redirect("appy/index")
+    return redirect("index")
 
 
 @login_required

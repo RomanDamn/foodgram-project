@@ -16,7 +16,7 @@ services:
     image: daero3333/foodpro:latest
     volumes:
       - staticfiles:/code/static
-      - mediafiles:/code/media/
+      - mediafiles:/code/media
     depends_on:
       - db
     env_file:
@@ -28,7 +28,7 @@ services:
       - web
     volumes:
       - staticfiles:/static
-      - mediafiles:/media/
+      - mediafiles:/media
       - ./host.conf:/etc/nginx/conf.d/default.conf
     ports:
       - 8888:80
