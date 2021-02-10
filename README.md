@@ -15,7 +15,7 @@ You need to install docker on your computer
 You need to open the console and make this command
 
 ```
-docker exec -it api_yamdb_web_1 python manage.py createsuperuser
+docker exec -it foodpro_web_1 python manage.py createsuperuser
 ```
 
 ### How to make migrations
@@ -23,7 +23,7 @@ docker exec -it api_yamdb_web_1 python manage.py createsuperuser
 You need to open the console and make this command
 
 ```
-docker exec -it api_yamdb_web_1 python manage.py migrate
+docker exec -it foodpro_web_1 python manage.py migrate
 ```
 
 ## Built With
