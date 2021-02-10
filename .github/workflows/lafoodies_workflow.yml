@@ -45,7 +45,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: daero3333/foodpro
+          tags: daero3333/foodpro:latest
 
   deploy:
     runs-on: ubuntu-latest

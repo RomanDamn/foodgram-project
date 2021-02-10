@@ -11,7 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - ./.env
+      - foodpro/.env
   web:
     image: daero3333/foodpro:latest
     volumes:
@@ -20,7 +20,7 @@ services:
     depends_on:
       - db
     env_file:
-      - ./.env
+      - foodpro/.env
 
   nginx:
     image: nginx:1.19.6

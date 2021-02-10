@@ -1,3 +1,4 @@
+# 84.201.152.85:8888
 # LaFoodie-project
 
 It is web app for lafoodies. For people who got awesome recipes and want to share it with other people. You can subscribe, add to favorites, add to shop list and not only this.
