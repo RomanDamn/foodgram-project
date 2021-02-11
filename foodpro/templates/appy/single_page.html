@@ -7,15 +7,9 @@
 {% block content %}
 {% csrf_token %}
 {% include 'includes/nav.html' %}
-    {% load thumbnail %}
     <main class="main container">
-        <div class="single-card" data-id="{{ recipe.id }}" data-author="{{ recipe.author.id }}">
-            {% thumbnail recipe.image "480x480" crop="center" upscale=True as im %}
-            <img src="{{ im.url }}" alt="{{ recipe.image }}" class="single-card__image">
-            {% endthumbnail %}
             {% include 'includes/single_page.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop
             in_follow=in_follow ingredients=ingredients %}
-        </div>
     </main>
 {% endblock content %}
 {% block js %}
