@@ -1,8 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}О технологиях{% endblock %}
+{% block static %}
 {% load static %}
 <link rel="stylesheet" href='{% static "pages/form.css" %}'>
-{% include 'includes/nav_auth.html' %}
+{% endblock static %}
+{% block content %}
+{% include 'includes/nav.html' %}
 <h1 class="form-container">Технологии, которые были использованы при создании этого проекта:</h1>
     <h2 class="form-container"> -Java Script </h2>
     <h2 class="form-container"> -HTML/CSS </h2>
     <h2 class="form-container"> -Бэкенд был написан полностью на Django </h2>
     <h2 class="form-container"> -А также DOCKER </h2>
+{% endblock content %}

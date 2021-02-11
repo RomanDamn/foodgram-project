@@ -1,28 +1,28 @@
 {% load thumbnail %}
 {% csrf_token %}
-            <div class="card" data-id="{{recipey.id}}">
+            <div class="card" data-id="{{ recipey.id }}">
                 {% thumbnail recipey.image "480x480" crop="center" upscale=True as im %}
-                <a href="{% url 'recipe_view' recipey.author recipey.id %}" class="link" target="_blank"><img src="{{ im.url }}" alt="Какой-то текст" class="card__image"></a>
+                <a href="{% url 'recipe_view' recipey.author recipey.id %}" class="link" target="_blank"><img src="{{ im.url }}" alt="{{ recipey.image }}" class="card__image"></a>
                 {% endthumbnail %}
                 <div class="card__body">
-                    <a class="card__title link" href="{% url 'recipe_view' recipey.author recipey.id %}" target="_blank">{{recipey.name}}</a>
+                    <a class="card__title link" href="{% url 'recipe_view' recipey.author recipey.id %}" target="_blank">{{ recipey.name }}</a>
                     <ul class="card__items">
                         {% for tag in recipey.tags.all %}
-                        <li class="card__item"><span class="badge badge_style_{{tag.style}}">{{tag}}</span></li>
+                        <li class="card__item"><span class="badge badge_style_{{tag.style}}">{{ tag }}</span></li>
                         {% endfor %}
                     </ul>
                     <div class="card__items card__items_column">
 
-                        <p class="card__text"><span class="icon-time"></span> {{recipey.time}} мин.</p>
-                        <p class="card__text"><span class="icon-user"></span> <a href="{% url 'author_recipes' recipey.author %}" style="color: black">{{recipey.author}}</a></p>
+                        <p class="card__text"><span class="icon-time"></span> {{ recipey.time }} мин.</p>
+                        <p class="card__text"><span class="icon-user"></span> <a href="{% url 'author_recipes' recipey.author %}" style="color: black">{{ recipey.author }}</a></p>
                     </div>
                 </div>
                 {% if request.user.is_authenticated %}
                 <div class="card__footer">
                     {% if  recipey.shop_list.all %}
-                     <button class="button button_style_light-blue-outline" name="purchases"><span class="icon-check button__icon"></span>Рецепт добавлен</button>
+                    {% include 'includes/button/ favorite_button.html' with button_class="button button_style_light-blue-outline" button_name="purchases" span_class="icon-check button__icon" button_text="Рецепт добавлен" %}<button class="button button_style_light-blue-outline" name="purchases"><span class="icon-check button__icon"></span>Рецепт добавлен</button>
                     {% else %}
-                    <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
+                    {% include 'includes/button/ favorite_button.html' with button_class="button button_style_light-blue" button_name="purchases" span_class="icon-plus button__icon" button_text="Добавить в покупки" %}
                     {% endif %}
                     {% if 'favorites' in request.path %}
                     {% if not in_favorite %}

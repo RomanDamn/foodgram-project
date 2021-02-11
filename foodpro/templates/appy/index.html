@@ -6,11 +6,7 @@
 {% endblock static %}
 {% block content %}
 {% csrf_token %}
-{% if user.is_authenticated %}
-  {% include 'includes/nav_auth.html' with index=1 %}
-{% else %}
-{% include 'includes/nav_not_auth.html' with index=True %}
-{% endif %}
+{% include 'includes/nav.html' with index=1 %}
     <main class="main container">
         <div class="main__header">
             <h1 class="main__title">Рецепты</h1>

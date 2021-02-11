@@ -5,11 +5,7 @@
     <link rel="stylesheet" href='{% static "pages/index.css" %}'>
     {% endblock static %}
 {% block content %}
-  {% if user.is_authenticated %}
-  {% include 'includes/nav_auth.html' %}
-  {% else %}
-  {% include 'includes/nav_not_auth.html' %}
-  {% endif %}
+  {% include 'includes/nav.html' %}
     <main class="main container">
         <div class="main__header">
             <h1 class="main__title">{{author}}</h1>
