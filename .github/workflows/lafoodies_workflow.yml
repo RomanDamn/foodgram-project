@@ -1,6 +1,5 @@
 name: lafoodies_workflow
-true:
-  - push
+on: [push]
 jobs:
   tests:
     runs-on: ubuntu-latest
