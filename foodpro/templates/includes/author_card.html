@@ -1,4 +1,4 @@
- <div class="card-user" data-author="{{author.id}}">
+        <div class="card-user" data-author="{{ author.id }}">
         <div class="card-user__header">
             <h2 class="card-user__title">{{ author }}</h2>
         </div>
@@ -23,3 +23,7 @@
                 {% endif %}
             </ul>
         </div>
+        <div class="card-user__footer">
+            <button onClick="window.location.reload();" class="button button_style_light-blue button_size_auto" name="subscribe">Отписаться</button>
+        </div>
+    </div>

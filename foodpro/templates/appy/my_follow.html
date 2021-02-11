@@ -14,11 +14,7 @@
     <div class="card-list">
         {% for author in page %}
             {% include 'includes/author_card.html' with author=author %}
-        <div class="card-user__footer">
-            <button onClick="window.location.reload();" class="button button_style_light-blue button_size_auto" name="subscribe">Отписаться</button>
-        </div>
-    </div>
-{% endfor %}
+        {% endfor %}
     </div>
 
     {% include 'includes/paginator.html' with items=page paginator=paginator %}
