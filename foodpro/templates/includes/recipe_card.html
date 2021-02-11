@@ -20,9 +20,9 @@
                 {% if request.user.is_authenticated %}
                 <div class="card__footer">
                     {% if  recipey.shop_list.all %}
-                    {% include 'includes/button/ favorite_button.html' with button_class="button button_style_light-blue-outline" button_name="purchases" span_class="icon-check button__icon" button_text="Рецепт добавлен" %}<button class="button button_style_light-blue-outline" name="purchases"><span class="icon-check button__icon"></span>Рецепт добавлен</button>
+                    {% include 'includes/buttons/favorite_button.html' with button_class="button button_style_light-blue-outline" button_name="purchases" span_class="icon-check button__icon" button_text="Рецепт добавлен" %}<button class="button button_style_light-blue-outline" name="purchases"><span class="icon-check button__icon"></span>Рецепт добавлен</button>
                     {% else %}
-                    {% include 'includes/button/ favorite_button.html' with button_class="button button_style_light-blue" button_name="purchases" span_class="icon-plus button__icon" button_text="Добавить в покупки" %}
+                    {% include 'includes/buttons/favorite_button.html' with button_class="button button_style_light-blue" button_name="purchases" span_class="icon-plus button__icon" button_text="Добавить в покупки" %}
                     {% endif %}
                     {% if 'favorites' in request.path %}
                     {% if not in_favorite %}

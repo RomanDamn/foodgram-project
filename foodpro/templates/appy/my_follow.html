@@ -6,7 +6,7 @@
     <link rel="stylesheet" href='{% static "pages/myFollow.css"%}'>
 {% endblock static %}
 {% block content %}
-{% include 'includes/nav.html' with index=2 %}
+{% include 'includes/nav_auth.html' with index=2 %}
 <main class="main container">
     <div class="main__header">
         <h1 class="main__title">Мои подписки</h1>
@@ -14,14 +14,6 @@
     <div class="card-list">
         {% for author in page %}
             {% include 'includes/author_card.html' with author=author %}
-                {% endfor %}
-                {% if author.recipes.count|add:-3 > 0 %}
-                <li class="card-user__item">
-                    <a href="{% url 'author_recipes' author %}" class="card-user__link link">{{ author.recipes.count |add:-3 }} more recipes...</a>
-                </li>
-                {% endif %}
-            </ul>
-        </div>
         <div class="card-user__footer">
             <button onClick="window.location.reload();" class="button button_style_light-blue button_size_auto" name="subscribe">Отписаться</button>
         </div>

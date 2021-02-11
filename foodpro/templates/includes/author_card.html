@@ -1,0 +1,25 @@
+ <div class="card-user" data-author="{{author.id}}">
+        <div class="card-user__header">
+            <h2 class="card-user__title">{{ author }}</h2>
+        </div>
+        <div class="card-user__body">
+            <ul class="card-user__items">
+                {% for item in author.recipes.all|slice:"0:3" %}
+                <li class="card-user__item">
+                     {% load thumbnail %}
+                    <div class="recipe">
+                        {% thumbnail item.image "480x480" crop="center" upscale=True as im %}
+                        <img src="{{im.url}}" alt="какой-то-текст" class="recipe__image">
+                        {% endthumbnail %}
+                        <h3 class="recipe__title">{{ item.name }}</h3>
+                        <p class="recipe__text"><span class="icon-time"></span> {{ item.time }} мин.</p>
+                    </div>
+                </li>
+                {% endfor %}
+                {% if author.recipes.count|add:-3 > 0 %}
+                <li class="card-user__item">
+                    <a href="{% url 'author_recipes' author %}" class="card-user__link link">{{ author.recipes.count |add:-3 }} more recipes...</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
