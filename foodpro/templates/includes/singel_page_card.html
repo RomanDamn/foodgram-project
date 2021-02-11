@@ -1,4 +1,5 @@
 {% load thumbnail %}
+<main class="main container">
 <div class="single-card" data-id="{{ recipe.id }}" data-author="{{ recipe.author.id }}">
             {% thumbnail recipe.image "480x480" crop="center" upscale=True as im %}
             <img src="{{ im.url }}" alt="{{ recipe.image }}" class="single-card__image">
@@ -62,3 +63,4 @@
     </div>
 </div>
 </div>
+    </main>

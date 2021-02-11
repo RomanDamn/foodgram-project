@@ -7,10 +7,7 @@
 {% block content %}
 {% csrf_token %}
 {% include 'includes/nav.html' %}
-    <main class="main container">
-            {% include 'includes/single_page.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop
-            in_follow=in_follow ingredients=ingredients %}
-    </main>
+{% include 'includes/single_page.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop in_follow=in_follow ingredients=ingredients %}
 {% endblock content %}
 {% block js %}
 <script src='{% static "js/components/Purchases.js" %}'></script>
