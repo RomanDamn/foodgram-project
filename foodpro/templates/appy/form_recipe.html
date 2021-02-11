@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
+{% block title %}
 {% if 'edit' in request.path %}
-{% block title %}Редактирование рецепта{% endblock %}
+Редактирование рецепта
 {% else %}
-{% block title %}Создание рецепта{% endblock %}
+Создание рецепта
 {% endif %}
+{% endblock %}
+
 {% block static %}
     {% load static %}
     <link rel="stylesheet" href="{% static 'pages/form.css' %}">
