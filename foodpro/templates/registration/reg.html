@@ -15,7 +15,7 @@
         <form class="form " method="post" action="{% url 'signup' %}">
             {% csrf_token %}
             {% for field in form %}
-            {% include 'includes/form_reg_change_fields' with field=field %}
+            {% include 'includes/form_reg_change_fields.html' with field=field %}
             {% endfor %}
 
              <div class="form__footer">
