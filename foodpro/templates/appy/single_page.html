@@ -13,7 +13,7 @@
             {% thumbnail recipe.image "480x480" crop="center" upscale=True as im %}
             <img src="{{ im.url }}" alt="{{ recipe.image }}" class="single-card__image">
             {% endthumbnail %}
-            {% include 'includes/singel_page.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop
+            {% include 'includes/single_page.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop
             in_follow=in_follow ingredients=ingredients %}
         </div>
     </main>
