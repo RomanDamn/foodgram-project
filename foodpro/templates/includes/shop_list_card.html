@@ -1,4 +1,5 @@
- <li class="shopping-list__item" data-id="111">
+{% load thumbnail %}
+<li class="shopping-list__item" data-id="111">
      <div class="recipe recipe_reverse">
          {% thumbnail item.image "480x480" crop="center" upscale=True as im %}
          <img src="{{ im.url }}" alt="{{ item.image }}" class="recipe__image recipe__image_big">
