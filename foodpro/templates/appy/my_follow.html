@@ -16,8 +16,9 @@
             {% include 'includes/author_card.html' with author=author %}
         {% endfor %}
     </div>
-
+    {% if page.has_other_pages %}
     {% include 'includes/paginator.html' with items=page paginator=paginator %}
+    {% endif %}
 </main>
 {% endblock content %}
 {% block js %}
