@@ -53,7 +53,7 @@
                                 class="tags__checkbox tags__checkbox_style_{{ tag.style }}"
                                 value="{{ tag.pk }}"
                                 {% if tag in recipe.tags.all %} checked {% endif %}>
-                                    <label for="id_{{ tag.name }}" class="tags__label">{{ tag.title }}</label>
+                                    <label for="id_{{ tag.name }}" class="tags__label">{{ error|escape }}</label>
                         </div>
                         {% endfor %}
                     </div>
