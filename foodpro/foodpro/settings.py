@@ -11,7 +11,7 @@ if os.path.exists(dotenv_path):
 SECRET_KEY = os.environ.get('SECRET_KEY'),
 # когда буду использовать докер, уберу ключ в .env
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
