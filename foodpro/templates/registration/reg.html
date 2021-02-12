@@ -12,6 +12,7 @@
     </div>
     <div class="form-container">
         <form class="form " method="post" action="{% url 'signup' %}">
+            <!--НЕТ! В макете нет фамилии в форме регистрации и авторизации!! Значит это поле не обязательное и не обязательно выодить фамилию в карточке -->
             {% csrf_token %}
             {% for field in form %}
             {% include 'includes/form_reg_change_fields.html' with field=field %}
