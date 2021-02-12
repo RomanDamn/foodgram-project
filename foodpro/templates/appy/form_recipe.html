@@ -54,7 +54,6 @@
                                 value="{{ tag.pk }}"
                                 {% if tag.pk in form.tags.value %}checked{% endif %}>
                                     <label for="id_{{ tag.name }}" class="tags__label">{{ tag.title }}</label>
-                                {% endif %}
                         </div>
                         {% endfor %}
                     </div>
