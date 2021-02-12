@@ -16,8 +16,9 @@
         {% include 'includes/recipe_card.html' %}
         {% endfor %}
          </div>
-        {% if  %}
+        {% if page.recipe.count > 6 %}
         {% include 'includes/paginator.html' with items=page paginator=paginator %}
+        {% endif %}
     </main>
 {% endblock content %}
 
