@@ -26,7 +26,7 @@
         {% endif %}
         <div class="card-list">
             {% for recipey in page %}
-            {% include 'includes/recipe_card.html' with items=page paginator=paginator %}
+            {% include 'includes/recipe_card.html' %}
             {% endfor %}
         </div>
        {% include 'includes/paginator.html' with items=page paginator=paginator %}
