@@ -25,10 +25,12 @@
                     {% else %}
                     {% include 'includes/buttons/favorite_button.html' with button_class="button button_style_light-blue" button_name="purchases" span_class="icon-plus button__icon" button_text="Добавить в покупки" %}
                     {% endif %}
+                    {% if 'favorites' in request.path %}
                     {% if not in_favorite %}
                         {% include 'includes/buttons/favorite_button.html' with button_class="button button_style_none" button_name="favorites" span_class="icon-favorite icon-favorite_big" %}
                     {% else %}
                     {% include 'includes/buttons/favorite_button.html' with button_class="button button_style_none" button_name="favorites" span_class="icon-favorite icon-favorite_big icon-favorite_active" %}
+                    {% endif %}
                     {% endif %}
                 </div>
                 {% endif %}
