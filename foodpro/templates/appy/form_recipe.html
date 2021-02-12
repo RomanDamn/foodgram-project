@@ -50,10 +50,11 @@
                                 type="checkbox"
                                 name="tags"
                                 id="id_{{ tag.name }}"
-                                class="tags__checkbox tags__checkbox_style_{{ tag.style }}"
+                                class="tags__checkbox tags__checkbox_style_{{ tag.style }} {% if tag in recipe.tags.all %} checked {% endif %}"
                                 value="{{ tag.pk }}"
                                 {% if tag.pk in form.tags.value %}checked{% endif %}>
                                     <label for="id_{{ tag.name }}" class="tags__label">{{ tag.title }}</label>
+                                {% endif %}
                         </div>
                         {% endfor %}
                     </div>
