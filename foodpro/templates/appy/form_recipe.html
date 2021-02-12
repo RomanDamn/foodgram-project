@@ -58,7 +58,7 @@
                         {% endfor %}
                     </div>
                     {% if form.tag.errors %}
-                    <span class="form__error">{{form.tag.errors}}</span>
+                    <span class="form__error">{{ form.tag.errors }}</span>
                     {% endif %}
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <input type="number" id="id_time" name="time" class="form__input" value="{{recipe.time}}">
                     <label for="{{form.time.id_for_label}}" class="form__label">минут</label>
                     {% if form.time.errors %}
-                    <span class="form__error">{% form.time.errors %}</span>
+                    <span class="form__error">{{form.time.errors}}</span>
                     {% endif %}
                 </div>
             </div>
