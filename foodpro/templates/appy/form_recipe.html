@@ -52,15 +52,14 @@
                                 id="id_{{ tag.name }}"
                                 class="tags__checkbox tags__checkbox_style_{{ tag.style }}"
                                 value="{{ tag.pk }}"
-                                {% if tag in recipe.tags.all %} checked {% endif %}
-                                {% if tag.pk in form.tags.value %}checked{% endif %}>
+                                {% if tag in recipe.tags.all %} checked {% endif %}>
                                     <label for="id_{{ tag.name }}" class="tags__label">{{ tag.title }}</label>
                         </div>
                         {% endfor %}
                     </div>
-                    {% for error in form.tags.errors %}
-                    <span class="form__error">{{ error }}</span>
-                    {% endfor %}
+                    {% if form.tags.errors %}
+                    <span class="form__error">{{ form.tags.errors }}</span>
+                    {% endif %}
                 </div>
             </div>
            <div class="form__group">
@@ -102,7 +101,7 @@
             </div>
 
             <div class="form__group">
-                <label for="{{form.description.id_for_label}}" class="form__label">{{form}}</label>
+                <label for="{{form.description.id_for_label}}" class="form__label">Описание</label>
                 <div class="form__field-group">
                     <textarea name="description" id="id_description" rows="8" class="form__textarea">{{ recipe.description }}</textarea>
                     {% if error in form.description.errors %}
