@@ -12,7 +12,7 @@
             {% include 'includes/top_tags.html' %}
 
         </div>
-        {% if request.user.id != author.id %}
+        {% if request.user.id != author.id and reques.user.is_authenticated %}
         {% if not in_follow %}
         <div class="author-subscribe" data-author="{{author.id}}">
             <p style="padding: 0 0 2em 0;">{% include 'includes/buttons/author_recipe_button.html' with button_class="button button_style_light-blue button_size_subscribe" button_name="subscribe" button_text="Подписаться на автора" %}</p>
