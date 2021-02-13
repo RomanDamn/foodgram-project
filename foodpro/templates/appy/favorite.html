@@ -5,7 +5,6 @@
     <link rel="stylesheet" href='{% static "pages/index.css" %}'>
 {% endblock static %}
 {% block content %}
-{% include 'includes/nav.html' with index=4 %}
 
     <main class="main container">
         <div class="main__header">
@@ -15,7 +14,7 @@
         </div>
         <div class="card-list">
             {% for recipey in page %}
-            {% include 'includes/recipe_card.html' with items=page paginator=paginator %}
+            {% include 'includes/recipe_card.html' %}
             {% endfor %}
         </div>
         {% if page.has_other_pages %}

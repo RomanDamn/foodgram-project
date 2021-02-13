@@ -6,7 +6,6 @@
 {% endblock static %}
 {% block content %}
 {% csrf_token %}
-{% include 'includes/nav.html' %}
 {% include 'includes/single_page_card.html' with recipe=recipe in_favorite=in_favorite in_shop=in_shop in_follow=in_follow ingredients=ingredients %}
 {% endblock content %}
 {% block js %}
