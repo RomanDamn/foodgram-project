@@ -19,7 +19,6 @@
             <p class="card__text"><span class="icon-time"></span> {{ recipey.time }} мин.</p>
             <p class="card__text"><span class="icon-user"></span> <a href="{% url 'author_recipes' recipey.author %}"
                     style="color: black">{{ recipey.author }}</a></p>
-            <!-- Да в макете при регистрации и авторизации показано что не надо фамилию вводить!!!-->
         </div>
     </div>
     {% if request.user.is_authenticated %}
