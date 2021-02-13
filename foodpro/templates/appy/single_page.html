@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block title %} {{recipe.name}} {% endblock %}
 {% block static %}
-    {% load static %}
-    <link rel="stylesheet" href='{% static "pages/single.css" %}'>
+{% load static %}
+<link rel="stylesheet" href='{% static "pages/single.css" %}'>
 {% endblock static %}
 {% block content %}
 {% csrf_token %}

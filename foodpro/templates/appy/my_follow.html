@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Мои подписки{% endblock %}
 {% block static %}
-    {% load static %}
-    {% csrf_token %}
-    <link rel="stylesheet" href='{% static "pages/myFollow.css"%}'>
+{% load static %}
+{% csrf_token %}
+<link rel="stylesheet" href='{% static "pages/myFollow.css"%}'>
 {% endblock static %}
 {% block content %}
 <main class="main container">
@@ -12,7 +12,7 @@
     </div>
     <div class="card-list">
         {% for author in page %}
-            {% include 'includes/author_card.html' with author=author %}
+        {% include 'includes/author_card.html' with author=author %}
         {% endfor %}
     </div>
     {% if page.has_other_pages %}

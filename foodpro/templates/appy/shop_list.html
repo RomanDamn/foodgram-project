@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block title %}Список покупок{% endblock %}
 {% block static %}
-    {% load static %}
-    <link rel="stylesheet" href='{% static "pages/shopList.css" %}'>
+{% load static %}
+<link rel="stylesheet" href='{% static "pages/shopList.css" %}'>
 {% endblock static %}
 {% block content %}
 <main class="main container">
@@ -12,10 +12,11 @@
     <div class="card-list card-list_column">
         <ul class="shopping-list">
             {% for item in list_shop %}
-           {% include 'includes/shop_list_card.html' with item=item %}
+            {% include 'includes/shop_list_card.html' with item=item %}
             {% endfor %}
         </ul>
-        <a href="{% url 'get_purchases' %}">{% include 'includes/buttons/shop_list_button.html' with button_class="button button_style_blue" button_text="Скачать список" %}</a>
+        <a
+            href="{% url 'get_purchases' %}">{% include 'includes/buttons/shop_list_button.html' with button_class="button button_style_blue" button_text="Скачать список" %}</a>
 
 
     </div>
