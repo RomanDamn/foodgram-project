@@ -75,7 +75,7 @@ def server_error(request):
 def edit_recipe(request, username, id):
     recipe = get_object_or_404(Recipe, author__username=username, id=id)
     if request.method == 'POST':
-        form = RecipeForm(request.POST,
+        form = RecipeForm(request.POST or None,
                           files=request.FILES or None, instance=recipe)
         if form.is_valid():
             return save_in_edit_create(request, form)
@@ -85,7 +85,7 @@ def edit_recipe(request, username, id):
                                                     'recipe': recipe
                                                     })
 
-    form = RecipeForm(request.POST,
+    form = RecipeForm(request.POST or None,
                       files=request.FILES or None,
                       instance=recipe)
     return render(request, 'appy/form_recipe.html',
@@ -99,7 +99,7 @@ def create_recipe(request):
                ing in request.POST.items()
                if key.startswith('nameIngredient_')]
 
-        form = RecipeForm(request.POST, files=request.FILES or None)
+        form = RecipeForm(request.POST or None, files=request.FILES or None)
         if len(ing) == 0:
             valid = 'error'
             return render(request, 'appy/form_recipe.html', {'form': form,
@@ -112,7 +112,7 @@ def create_recipe(request):
                                                     'valid': valid,
                                                     })
 
-    form = RecipeForm(request.POST, files=request.FILES or None)
+    form = RecipeForm(request.POST or None, files=request.FILES or None)
     return render(request, 'appy/form_recipe.html', {'form': form})
 
 
