@@ -23,7 +23,7 @@ def index(request):
 
     paginator = Paginator(recipe_list, settings.RECIPES_PER_PAGE)
     in_shop = ShopList.objects.filter(user__username=request.user)
-#lol
+
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
     return render(
