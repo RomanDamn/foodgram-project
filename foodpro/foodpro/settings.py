@@ -9,7 +9,6 @@ if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 
 SECRET_KEY = os.environ.get('SECRET_KEY'),
-# когда буду использовать докер, уберу ключ в .env
 
 DEBUG = False
 
