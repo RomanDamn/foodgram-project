@@ -30,7 +30,7 @@ def index(request):
         request,
         'appy/index.html',
         {'page': page, 'paginator': paginator,
-            'in_shop': in_shop, 'in_favorite': in_favorite, 'tag_list': tag_list}
+            'in_shop': in_shop, 'tag_list': tag_list}
         )
 
 
@@ -147,7 +147,7 @@ def author_recipes(request, username):
         'appy/author_recipe.html',
         {'author': author, 'page': page,
          'paginator': paginator,
-         'tag_list': tag_list, 'in_follow': in_follow, 'in_favorite': in_favorite}
+         'tag_list': tag_list, 'in_follow': in_follow}
     )
 
 
