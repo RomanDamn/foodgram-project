@@ -23,7 +23,7 @@ def index(request):
 
     paginator = Paginator(recipe_list, settings.RECIPES_PER_PAGE)
     in_shop = ShopList.objects.filter(user__username=request.user)
-    in_favorite = Favorite.objects.filter(user__username=request.user).exists()
+
     page_number = request.GET.get('page')
     page = paginator.get_page(page_number)
     return render(
@@ -135,7 +135,6 @@ def author_recipes(request, username):
     author = get_object_or_404(User, username=username)
     in_follow = Follow.objects.filter(
         user__username=request.user, author__username=username).exists()
-    in_favorite = Favorite.objects.filter(user__username=request.user)
     recipes = author.recipes.filter(
         tags__name__in=tags
     ).distinct()
