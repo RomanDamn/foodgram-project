@@ -135,6 +135,7 @@ def author_recipes(request, username):
     author = get_object_or_404(User, username=username)
     in_follow = Follow.objects.filter(
         user__username=request.user, author__username=username).exists()
+    in_favorite = Favorite.objects.filter(user__username=request.user)
     recipes = author.recipes.filter(
         tags__name__in=tags
     ).distinct()
@@ -147,7 +148,7 @@ def author_recipes(request, username):
         'appy/author_recipe.html',
         {'author': author, 'page': page,
          'paginator': paginator,
-         'tag_list': tag_list, 'in_follow': in_follow}
+         'tag_list': tag_list, 'in_follow': in_follow, 'in_favorite': in_favorite}
     )
 
 
