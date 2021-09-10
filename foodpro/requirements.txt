@@ -11,7 +11,7 @@ PyYAML==5.4.1
 sorl-thumbnail==12.7.0
 sqlite-fts4==1.0.1
 sqlite-utils==3.3
-sqlparse==0.4.1
+sqlparse==0.4.2
 tabulate==0.8.7
 yaml-to-sqlite==0.3.1
 gunicorn==20.0.4
